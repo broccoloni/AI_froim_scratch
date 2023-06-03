@@ -1,5 +1,7 @@
 # AI_from_scratch
-I built a variety of AI tools in numpy that can be used similar to keras.
+I built a variety of AI tools in numpy that can be used similar to keras. 
+The forward and backward calculations have been verified by comparison with Pytorch, as shown in Model_Test.ipynb
+
 For example, one can instantiate a model and add layers as follows
 
 ```
@@ -10,7 +12,7 @@ import Activations as a
 
 model = Model() 
 model.addLayer(Linear(10,20), activation = a.ReLU())
-model.addLayer(Linear(10,3))
+model.addLayer(Linear(20,3))
 ```
 
 Currently this code supports the following layers
